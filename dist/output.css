@@ -576,6 +576,8 @@ body {
 nav a {
   display: block;
   text-align: center;
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
 nav ul li {
@@ -583,32 +585,30 @@ nav ul li {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
   width: 100%;
-  border-left-width: 2px;
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
-nav ul li:first-child {
-  border-left-width: 0px;
-}
+@media (min-width: 1024px) {
+  nav ul li {
+    border-left-width: 2px;
+  }
 
-nav ul li.active::after {
-  position: absolute;
-  top: -1.5rem;
-  height: 0.5rem;
-  width: 100%;
-  --tw-bg-opacity: 1;
-  background-color: rgb(218 166 37 / var(--tw-bg-opacity));
-  --tw-content: '';
-  content: var(--tw-content);
-}
+  nav ul li:first-child {
+    border-left-width: 0px;
+  }
 
-.m-2 {
-  margin: 0.5rem;
-}
-
-.m-1 {
-  margin: 0.25rem;
+  nav ul li.active::after {
+    position: absolute;
+    top: -1.5rem;
+    height: 0.5rem;
+    width: 100%;
+    border-radius: 0.375rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(218 166 37 / var(--tw-bg-opacity));
+    --tw-content: '';
+    content: var(--tw-content);
+  }
 }
 
 .m-0\.5 {
@@ -624,15 +624,6 @@ nav ul li.active::after {
   margin-right: 0.5rem;
 }
 
-.mx-1 {
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
-}
-
-.mb-1 {
-  margin-bottom: 0.25rem;
-}
-
 .block {
   display: block;
 }
@@ -645,36 +636,28 @@ nav ul li.active::after {
   display: none;
 }
 
-.h-2 {
-  height: 0.5rem;
+.h-1\.5 {
+  height: 0.375rem;
 }
 
 .h-1 {
   height: 0.25rem;
 }
 
-.h-1\/2 {
-  height: 50%;
-}
-
-.h-2\/3 {
-  height: 66.666667%;
-}
-
-.h-1\.5 {
-  height: 0.375rem;
-}
-
 .w-\[200px\] {
   width: 200px;
 }
 
-.w-\[100px\] {
-  width: 100px;
-}
-
 .w-\[40px\] {
   width: 40px;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .items-center {
@@ -718,6 +701,10 @@ nav ul li.active::after {
   padding-bottom: 0.5rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .font-raleway {
   font-family: Raleway, san-serif;
 }
@@ -749,20 +736,6 @@ nav ul li.active::after {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-@media (min-width: 768px) {
-  .md\:block {
-    display: block;
-  }
-
-  .md\:flex {
-    display: flex;
-  }
-
-  .md\:hidden {
-    display: none;
-  }
 }
 
 @media (min-width: 1024px) {

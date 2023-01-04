@@ -23,13 +23,13 @@
         @apply block py-2 px-6 rounded-md;
     }
     nav a{
-        @apply block text-center 
+        @apply block text-center text-gray-600 
     }
     nav ul li {
-        @apply border-l-2 border-gray-300 my-5 first:border-l-0 w-full
+        @apply lg:border-l-2 border-gray-300 my-5 lg:first:border-l-0 w-full
         relative
     }
     nav ul li.active {
-        @apply after:bg-accentYellow after:h-2 after:w-full after:content-[''] after:absolute after:-top-6 
+        @apply lg:after:bg-accentYellow lg:after:h-2 lg:after:w-full lg:after:content-[''] lg:after:absolute lg:after:-top-6  lg:after:rounded-md
     }
 }
