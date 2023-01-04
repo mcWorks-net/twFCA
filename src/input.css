@@ -30,6 +30,6 @@
         relative
     }
     nav ul li.active {
-        @apply after:bg-accentYellow after:h-2 after:w-full after:content-[''] after:absolute after:-top-6
+        @apply after:bg-accentYellow after:h-2 after:w-full after:content-[''] after:absolute after:-top-6 
     }
 }

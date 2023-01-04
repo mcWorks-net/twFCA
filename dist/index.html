@@ -11,12 +11,12 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="border-b border-black md:flex items-center justify-between">
+            <div class="border-b border-black flex items-center justify-between">
                 <div class="headerLogo  py-2">
                     <img class="w-[200px]" src="./img/fca-logo.png" alt="">
                 </div>
-                <div class="headerContact">
-                    <ul class="font-raleway lg:flex hidden items-center ">
+                <div class="headerContact hidden lg:block">
+                    <ul class="font-raleway flex items-center ">
                         <li class="mx-2">
                             <i class="fa-solid fa-phone"></i>
                             (049) 521-0732 
@@ -30,6 +30,11 @@
                         </li>
                         <li class="mx-2"><a href="#" class="btn bg-white hover:bg-[#28941e] hover:text-white outline-1   text-black border-black border">FAQ</a></li>
                     </ul>
+                </div>
+                <div class="toggle_menu lg:hidden">
+                    <span class="w-[40px] bg-dark h-1.5 block m-0.5 border"></span>
+                    <span class="w-[40px] bg-dark h-1.5 block m-0.5  border"></span>
+                    <span class="w-[40px] bg-dark h-1.5 block m-0.5 border"></span>
                 </div>
             </div>
            <nav>
