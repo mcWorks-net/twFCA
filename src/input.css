@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    h1, h2, h3, h4 {
+        @apply font-bold;
+    }
+
+    p {
+        @apply mb-2;
+    }
+
+    body {
+        @apply leading-relaxed font-poppins;
+    }
+
+}
+
+@layer components {
+    .btn {
+        @apply block py-2 px-6 rounded-md;
+    }
+    nav a{
+        @apply block text-center 
+    }
+    nav ul li {
+        @apply border-l-2 border-gray-300 my-5 first:border-l-0 w-full
+        relative
+    }
+    nav ul li.active {
+        @apply after:bg-accentYellow after:h-2 after:w-full after:content-[''] after:absolute after:-top-6
+    }
+}
