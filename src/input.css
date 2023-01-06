@@ -13,7 +13,7 @@
     }
 
     body {
-        @apply leading-relaxed font-poppins;
+        @apply leading-relaxed font-raleway;
     }
 
 }

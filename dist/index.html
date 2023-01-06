@@ -38,7 +38,7 @@
                     <span class="w-[40px] bg-dark h-1.5 block m-0.5 border"></span>
                 </div>
             </div>
-           <nav class="block lg:block" >
+           <nav class="hidden lg:block" >
             <ul class="lg:flex lg:justify-between">
                 <li class="active"><a href="">HOME</a></li>
                 <li class=""><a href="">ABOUT</a></li>
@@ -49,23 +49,117 @@
                 <li><a href="">GIVE</a></li>
             </ul>
            </nav>
-           <div class="headerContact">
+           <div class="headerContact hidden lg:hidden">
             <ul class="font-raleway block items-center text-center">
-                <li class="mx-2">
+                <li class="mx-2 my-3">
                     <i class="fa-solid fa-phone"></i>
                     (049) 521-0732 
                 </li>
-                <li class="mx-2">
+                <li class="mx-2 my-3">
                     <i class="fa-solid fa-mobile-retro"></i>
                     (+63) 908-202-0749 | (+63) 926-363-9722
                 </li>
-                <li class="mx-2">
-                    <a href="#" class="btn bg-[#3b5897] hover:bg-[#1573e5] border text-white">Facebook</a>
+                <li class="mx-2 my-3">
+                    <a href="#" class="btn w-[140px] mx-auto bg-[#3b5897] hover:bg-[#1573e5] border text-white">Facebook</a>
                 </li>
-                <li class="mx-2"><a href="#" class="btn bg-white hover:bg-[#28941e] hover:text-white outline-1   text-black border-black border">FAQ</a></li>
+                <li class="mx-2 my-3"><a href="#"  class="btn w-[140px] mx-auto bg-white hover:bg-[#28941e] hover:text-white outline-1   text-black border-black border">FAQ</a></li>
             </ul>
         </div>
         </div>
     </header>
+
+
+    <section class="banner bg-dark text-white relative">
+        <div class="relative h-auto md:h-[744px]">
+
+            <video class="hidden md:block w-full md:h-[744px] absolute object-cover top-0" autoplay>
+                <source src="./img/fcaBackGroundVideo.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+              Your browser does not support the video tag.
+             </video>
+           
+            <div class="text-center relative py-28 lg:py-52">
+                <div class="container">
+                    <h1 class="text-6xl mx-auto text-huge font-serif mb-5">
+                        Building Faith, Character and Academic Excellence
+                    </h1>
+                    <p class="mb-20 lg:max-w-4xl mx-auto">
+                        We genuinely care about the holistic development of our students, and continue to reach for our vision of impacting the nation through the development of Godly steward leaders.
+                    </p>
+                    <a class="btn bg-accent hover:bg-accentYellow text-white w-[150px] mx-auto text-center" href="#">Inquire now!</a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="addMission absolute bg-white w-[500px] h-32 -bottom-[60px] mx-auto left-0 right-0 border z-10">
+            aasd
+        </div>
+    </section>
+
+
+    <section class="scholarship py-40 bg-[url('./img/scholarship.png')] bg-cover bg-center bg-fixed z-1">
+        <div class="container">
+            <h2 class="text-3xl text-primary my-8">Apply for Scholarship</h2>
+            <p class="my-8 max-w-md">
+                The scholarship program would provide funding for the schooling costs of qualified students
+            </p>
+            <a class="btn bg-accentYellow text-white w-[140px] text-center" href="#">Apply Now</a>
+        </div>
+    </section>
+
+    <section class="map">
+        <iframe class="w-full h-[500px]" id="gmap_canvas" src="https://maps.google.com/maps?q=frontline%20christian%20academy&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+    </section>
+
+    <section class="partners py-20">
+        <div class="container">
+            <div class="md:flex items-center block">
+                <img class="w-[200px] h-[52px] mx-auto my-5" src="./img/logo-fbs.png" alt="">
+                <img class="w-[200px] mx-auto my-5" src="./img/logo-pfm.jpg" alt="">
+                <img class="w-[200px] mx-auto my-5" src="./img/threadworks-logo-blck.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer pt-10 pb-10 bg-clrGray">
+        <div class="container">
+            <div class="lg:flex justify-between">
+                <div class="footerLogo my-2">
+                    <img src="./img/fca-logo.png" class="w-[200px] mx-auto" alt="">
+                </div>
+                <div class="quickLinks hidden lg:flex font-raleway">
+                    <ul class="mx-5">
+                        <li class="font-bold">Admission</li>
+                        <li class="my-2"><a class="text-gray-600" href="#">Playschool</a></li>
+                        <li class="my-2"><a class="text-gray-600" href="#">Pre-school</a></li>
+                        <li class="my-2"><a class="text-gray-600" href="#">Elementary</a></li>
+                        <li class="my-2"><a class="text-gray-600" href="#">Junior High</a></li>
+                    </ul>
+                    <ul class="mx-5">
+                        <li class="font-bold">Other Offers</li>
+                        <li class="my-2"><a class="text-gray-600" href="#">Tutorial Services</a></li>
+                        <li class="my-2"><a class="text-gray-600" href="#">Arts</a></li>
+                        <li class="my-2"><a class="text-gray-600" href="#">Music Lessons</a></li>
+                        <li class="my-2"><a class="text-gray-600" href="#">Sports</a></li>
+                        <li class="my-2"><a class="text-gray-600" href="#">Transportation</a></li>
+                    </ul>
+                    <ul class="mx-5">
+                        <li class="font-bold">Quicklinks</li>
+                        <li class="my-2"><a class="text-gray-600" href="#">Home</a></li>
+                        <li class="my-2"><a class="text-gray-600" href="#">About</a></li>
+                        <li class="my-2"><a class="text-gray-600" href="#">Admission</a></li>
+                        <li class="my-2"><a class="text-gray-600" href="#">Services</a></li>
+                        <li class="my-2"><a class="text-gray-600" href="#">Gallery</a></li>
+                        <li class="my-2"><a class="text-gray-600" href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footerBtn text-center">
+                    <a href="#" class="btn bg-[#28941e] hover:bg-accentYellow my-2 text-white w-[200px] mx-auto">Give</a>
+                    <a href="#" class="btn border w-[200px] hover:bg-accentYellow hover:text-white my-2 mx-auto border-[#28941e]">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
