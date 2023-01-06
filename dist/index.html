@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./output.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&family=Raleway:ital,wght@0,100;0,400;1,100;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" id="fca-fa-2-css" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css?ver=6.1.1" type="text/css" media="all">
 </head>
 <body>
     <header class="header">
@@ -69,10 +70,10 @@
     </header>
 
 
-    <section class="banner bg-dark text-white relative">
+    <section class="banner bg-dark text-white relative h-[900px] md:h-auto">
         <div class="relative h-auto md:h-[744px]">
 
-            <video class="hidden md:block w-full md:h-[744px] absolute object-cover top-0" autoplay>
+            <video class="brightness-50 hidden md:block w-full md:h-[744px] absolute object-cover top-0" autoplay loop>
                 <source src="./img/fcaBackGroundVideo.mp4" type="video/mp4">
                 <source src="movie.ogg" type="video/ogg">
               Your browser does not support the video tag.
@@ -91,8 +92,61 @@
                 
             </div>
         </div>
-        <div class="addMission absolute bg-white w-[500px] h-32 -bottom-[60px] mx-auto left-0 right-0 border z-10">
-            aasd
+        <div class="addMission md:absolute h-32 md:-bottom-[30px] mx-auto md:left-0 md:right-0 z-10">
+            <div class="container">
+                <div class="cards grid grid-cols-2 gap-3 text-center lg:flex lg:justify-center lg:items-center">
+                    <div class="bg-white group lg:py-8 lg:w-[280px] lg:h-[206px] shadow-md hover:lg:scale-110 hover:lg:bg-primary ease-in hover:lg:ease-in transition">
+                        <div class="border-r-2 my-auto lg:px-12 h-[134px] group-hover:border-0">
+                            <i class="fa-solid fa-cubes text-gray-500 text-4xl my-5 group-hover:lg:text-white"></i>
+                            <h3 class="text-primary text-2xl group-hover:lg:text-white"><small>Playschool</small></h3>
+                        </div>
+                    </div>
+                    <div class="bg-white group lg:py-8 lg:w-[280px] lg:h-[206px] shadow-md hover:lg:scale-110 hover:lg:bg-primary ease-in hover:lg:ease-in transition">
+                        <div class="border-r-2 my-auto lg:px-12 h-[134px] group-hover:border-0">
+                            <i class="fa-solid fa-child text-gray-500 text-4xl my-5 group-hover:lg:text-white"></i>
+                            <h3 class="text-primary text-2xl group-hover:lg:text-white">Playschool</h3>
+                            <p class="text-gray-500 group-hover:lg:text-white"><small>Nursery | Pre-Kinder | Kinder</small></p>
+                        </div>
+                    </div>
+                    <div class="bg-white group lg:py-8 lg:w-[280px] lg:h-[206px] shadow-md hover:lg:scale-110 hover:lg:bg-primary ease-in hover:lg:ease-in transition">
+                        <div class="border-r-2 my-auto lg:px-12 h-[134px] group-hover:border-0">
+                            <i class="fa-solid fa-book-open text-gray-500 text-4xl my-5 group-hover:lg:text-white"></i>
+                            <h3 class="text-primary text-2xl group-hover:lg:text-white">Playschool</h3>
+                            <p class="text-gray-500 group-hover:lg:text-white"><small>Primary | Intermediate</small></p>
+                        </div>
+                    </div>
+                    <div class="bg-white group lg:py-8 lg:w-[280px] lg:h-[206px] shadow-md hover:lg:scale-110 hover:lg:bg-primary ease-in hover:lg:ease-in transition">
+                        <div class="border-r-2 my-auto lg:px-12 h-[134px] group-hover:border-0">
+                            <i class="fa-solid fa-user-tie text-gray-500 text-4xl my-5 group-hover:lg:text-white"></i>
+                            <h3 class="text-primary text-2xl group-hover:lg:text-white">Playschool</h3>
+                            <p class="text-gray-500 group-hover:lg:text-white"><small>Highschool Education</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="whyUs py-32 lg:pt-52 lg:pb-24 text-center">
+        <div class="container">
+            <h2 class="text-3xl text-primary mb-10">Why Chooes Us?</h2>
+            <div class="lg:flex justify-center">
+                <div class="answer relative text-center cursor-pointer  w-[250px] after:absolute after:h-[1px] after:w-[50%] after:bottom-2 after:content-[''] after:bg-gray-300 after:right-0 after:-z-10">
+                    <h2 class="text-2xl text-primary">Holistic</h2>
+                    <p class="text-gray-500">Education</p>
+                    <span class="circle h-[20px] w-[20px] block bg-gray-500 mx-auto rounded-xl border-2  shadow-2xl"></span>
+                </div>
+                <div class="answer relative text-center cursor-pointer  w-[250px] after:absolute after:h-[1px] after:w-full after:bottom-2 after:content-[''] after:bg-gray-300 after:left-0 after:-z-10">
+                    <h2 class="text-2xl text-primary">Transform</h2>
+                    <p class="text-gray-500">Individuals</p>
+                    <span class="circle h-[20px] w-[20px] block bg-gray-500 mx-auto rounded-xl border-2  shadow-2xl z-10"></span>
+                </div>
+                <div class="answer relative text-center cursor-pointer  w-[250px] after:absolute after:h-[1px] after:w-[50%] after:bottom-2 after:content-[''] after:bg-gray-300 after:left-0 after:-z-10">
+                    <h2 class="text-2xl text-primary">Give</h2>
+                    <p class="text-gray-500">Hope</p>
+                    <span class="circle h-[20px] w-[20px] block bg-gray-500 mx-auto rounded-xl border-2  shadow-2xl"></span>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -124,7 +178,7 @@
 
     <footer class="footer pt-10 pb-10 bg-clrGray">
         <div class="container">
-            <div class="lg:flex justify-between">
+            <div class="lg:flex justify-between border-b-2 border-b-gray-500">
                 <div class="footerLogo my-2">
                     <img src="./img/fca-logo.png" class="w-[200px] mx-auto" alt="">
                 </div>
@@ -154,9 +208,19 @@
                         <li class="my-2"><a class="text-gray-600" href="#">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footerBtn text-center">
+                <div class="footerBtn text-center mb-10 lg:mb-0">
                     <a href="#" class="btn bg-[#28941e] hover:bg-accentYellow my-2 text-white w-[200px] mx-auto">Give</a>
                     <a href="#" class="btn border w-[200px] hover:bg-accentYellow hover:text-white my-2 mx-auto border-[#28941e]">FAQ</a>
+                </div>
+            </div>
+            <div class="footerBottom pt-5">
+                <div class="text-center lg:flex lg:justify-between lg:items-center">
+                    <ul class="flex justify-center order-2">
+                        <li class="mx-3"><small>Follow us:</small></li>
+                        <li class="mx-3"><i class="fa-brands fa-facebook text-3xl"></i></li>
+                        <li class="mx-3"><i class="fa-brands fa-instagram text-3xl"></i></li>
+                    </ul>
+                    <p class="order-1"><small>&#169; Frontline Christain Academy 2023</small></p>
                 </div>
             </div>
         </div>
