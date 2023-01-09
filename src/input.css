@@ -22,6 +22,9 @@
     .btn {
         @apply block py-2 px-6 rounded-md;
     }
+    nav.active {
+        @apply right-0
+    }
     nav a{
         @apply block text-center text-gray-600 
     }
@@ -31,5 +34,15 @@
     }
     nav ul li.active {
         @apply lg:after:bg-accentYellow lg:after:h-2 lg:after:w-full lg:after:content-[''] lg:after:absolute lg:after:-top-6  lg:after:rounded-md
+    }
+    .servicesItem i{
+        -webkit-text-fill-color: #008542;
+        -webkit-text-stroke-width: 0.7px;
+        -webkit-text-stroke-color: white;
+    }   
+    .servicesItem:hover i{
+        -webkit-text-fill-color: unset;
+        -webkit-text-stroke-width: unset;
+        -webkit-text-stroke-color: unset;
     }
 }

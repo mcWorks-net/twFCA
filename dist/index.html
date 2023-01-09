@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Frontline Christian Academy</title>
     <link rel="stylesheet" href="./output.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&family=Raleway:ital,wght@0,100;0,400;1,100;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" id="fca-fa-2-css" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css?ver=6.1.1" type="text/css" media="all">
 </head>
 <body>
-    <header class="header">
+    <header class="header fixed z-10 w-full mx-auto bg-white">
         <div class="container">
             <div class="border-b border-black flex items-center justify-between">
                 <div class="headerLogo  py-2">
@@ -39,8 +39,9 @@
                     <span class="w-[40px] bg-dark h-1.5 block m-0.5 border"></span>
                 </div>
             </div>
-           <nav class="hidden lg:block" >
-            <ul class="lg:flex lg:justify-between">
+
+           <nav class="absolute top-[90px] z-10 bg-white h-screen lg:h-auto -right-[-100%] lg:right-0 w-full lg:block lg:static ease-in-out duration-500 transition-all" >
+            <ul class="lg:flex lg:justify-between ">
                 <li class="active"><a href="">HOME</a></li>
                 <li class=""><a href="">ABOUT</a></li>
                 <li><a href="">ADMISSION</a></li>
@@ -49,31 +50,32 @@
                 <li><a href="">CONTACT</a></li>
                 <li><a href="">GIVE</a></li>
             </ul>
+            <div class="headerContact lg:hidden ">
+                <ul class="font-raleway block items-center text-center">
+                    <li class="my-3">
+                        <i class="fa-solid fa-phone"></i>
+                        (049) 521-0732 
+                    </li>
+                    <li class="my-3">
+                        <i class="fa-solid fa-mobile-retro"></i>
+                        (+63) 908-202-0749 | (+63) 926-363-9722
+                    </li>
+                    <li class="my-3">
+                        <a href="#" class="btn w-[140px] mx-auto bg-[#3b5897] hover:bg-[#1573e5] border text-white">Facebook</a>
+                    </li>
+                    <li class="my-3"><a href="#"  class="btn w-[140px] mx-auto bg-white hover:bg-[#28941e] hover:text-white outline-1   text-black border-black border">FAQ</a></li>
+                </ul>
+            </div>
            </nav>
-           <div class="headerContact hidden lg:hidden">
-            <ul class="font-raleway block items-center text-center">
-                <li class="mx-2 my-3">
-                    <i class="fa-solid fa-phone"></i>
-                    (049) 521-0732 
-                </li>
-                <li class="mx-2 my-3">
-                    <i class="fa-solid fa-mobile-retro"></i>
-                    (+63) 908-202-0749 | (+63) 926-363-9722
-                </li>
-                <li class="mx-2 my-3">
-                    <a href="#" class="btn w-[140px] mx-auto bg-[#3b5897] hover:bg-[#1573e5] border text-white">Facebook</a>
-                </li>
-                <li class="mx-2 my-3"><a href="#"  class="btn w-[140px] mx-auto bg-white hover:bg-[#28941e] hover:text-white outline-1   text-black border-black border">FAQ</a></li>
-            </ul>
-        </div>
+    
         </div>
     </header>
 
 
-    <section class="banner bg-dark text-white relative h-[900px] md:h-auto">
+    <section class="banner text-white relative h-[900px] md:h-auto pt-[94.3px]">
         <div class="relative h-auto md:h-[744px]">
 
-            <video class="brightness-50 hidden md:block w-full md:h-[744px] absolute object-cover top-0" autoplay loop>
+            <video class="h-[100%] brightness-50 md:block w-full md:h-[744px] absolute object-cover top-0" autoplay loop>
                 <source src="./img/fcaBackGroundVideo.mp4" type="video/mp4">
                 <source src="movie.ogg" type="video/ogg">
               Your browser does not support the video tag.
@@ -81,10 +83,10 @@
            
             <div class="text-center relative py-28 lg:py-52">
                 <div class="container">
-                    <h1 class="text-6xl mx-auto text-huge font-serif mb-5">
+                    <h1 class="text-6xl mx-auto text-huge font-serif mb-5 drop-shadow-2xl ">
                         Building Faith, Character and Academic Excellence
                     </h1>
-                    <p class="mb-20 lg:max-w-4xl mx-auto">
+                    <p class="mb-20 lg:max-w-4xl mx-auto drop-shadow-2xl">
                         We genuinely care about the holistic development of our students, and continue to reach for our vision of impacting the nation through the development of Godly steward leaders.
                     </p>
                     <a class="btn bg-accent hover:bg-accentYellow text-white w-[150px] mx-auto text-center" href="#">Inquire now!</a>
@@ -92,34 +94,34 @@
                 
             </div>
         </div>
-        <div class="addMission md:absolute h-32 md:-bottom-[30px] mx-auto md:left-0 md:right-0 z-10">
+        <div class="addMission block mt-10 md:absolute h-32 md:-bottom-[30px] mx-auto md:left-0 md:right-0 z-10">
             <div class="container">
                 <div class="cards grid grid-cols-2 gap-3 text-center lg:flex lg:justify-center lg:items-center">
-                    <div class="bg-white group lg:py-8 lg:w-[280px] lg:h-[206px] shadow-md hover:lg:scale-110 hover:lg:bg-primary ease-in hover:lg:ease-in transition">
+                    <div class="bg-white group lg:py-8 lg:w-[280px] lg:h-[206px] shadow-md hover:scale-110 hover:bg-primary ease-in hover:ease-in transition cursor-pointer">
                         <div class="border-r-2 my-auto lg:px-12 h-[134px] group-hover:border-0">
-                            <i class="fa-solid fa-cubes text-gray-500 text-4xl my-5 group-hover:lg:text-white"></i>
-                            <h3 class="text-primary text-2xl group-hover:lg:text-white"><small>Playschool</small></h3>
+                            <i class="fa-solid fa-cubes text-gray-500 text-4xl my-5 group-hover:text-white"></i>
+                            <h3 class="text-primary text-2xl group-hover:text-white"><small>Playschool</small></h3>
                         </div>
                     </div>
-                    <div class="bg-white group lg:py-8 lg:w-[280px] lg:h-[206px] shadow-md hover:lg:scale-110 hover:lg:bg-primary ease-in hover:lg:ease-in transition">
+                    <div class="bg-white group lg:py-8 lg:w-[280px] lg:h-[206px] shadow-md hover:scale-110 hover:bg-primary ease-in hover:ease-in transition cursor-pointer">
                         <div class="border-r-2 my-auto lg:px-12 h-[134px] group-hover:border-0">
-                            <i class="fa-solid fa-child text-gray-500 text-4xl my-5 group-hover:lg:text-white"></i>
-                            <h3 class="text-primary text-2xl group-hover:lg:text-white">Playschool</h3>
-                            <p class="text-gray-500 group-hover:lg:text-white"><small>Nursery | Pre-Kinder | Kinder</small></p>
+                            <i class="fa-solid fa-child text-gray-500 text-4xl my-5 group-hover:text-white"></i>
+                            <h3 class="text-primary text-2xl group-hover:text-white">Pre-school</h3>
+                            <p class="text-gray-500 group-hover:text-white"><small>Nursery | Pre-Kinder | Kinder</small></p>
                         </div>
                     </div>
-                    <div class="bg-white group lg:py-8 lg:w-[280px] lg:h-[206px] shadow-md hover:lg:scale-110 hover:lg:bg-primary ease-in hover:lg:ease-in transition">
+                    <div class="bg-white group lg:py-8 lg:w-[280px] lg:h-[206px] shadow-md hover:scale-110 hover:bg-primary ease-in hover:ease-in transition cursor-pointer">
                         <div class="border-r-2 my-auto lg:px-12 h-[134px] group-hover:border-0">
-                            <i class="fa-solid fa-book-open text-gray-500 text-4xl my-5 group-hover:lg:text-white"></i>
-                            <h3 class="text-primary text-2xl group-hover:lg:text-white">Playschool</h3>
-                            <p class="text-gray-500 group-hover:lg:text-white"><small>Primary | Intermediate</small></p>
+                            <i class="fa-solid fa-book-open text-gray-500 text-4xl my-5 group-hover:text-white"></i>
+                            <h3 class="text-primary text-2xl group-hover:text-white">Elementary</h3>
+                            <p class="text-gray-500 group-hover:text-white"><small>Primary | Intermediate</small></p>
                         </div>
                     </div>
-                    <div class="bg-white group lg:py-8 lg:w-[280px] lg:h-[206px] shadow-md hover:lg:scale-110 hover:lg:bg-primary ease-in hover:lg:ease-in transition">
+                    <div class="bg-white group lg:py-8 lg:w-[280px] lg:h-[206px] shadow-md hover:scale-110 hover:bg-primary ease-in hover:ease-in transition cursor-pointer">
                         <div class="border-r-2 my-auto lg:px-12 h-[134px] group-hover:border-0">
-                            <i class="fa-solid fa-user-tie text-gray-500 text-4xl my-5 group-hover:lg:text-white"></i>
-                            <h3 class="text-primary text-2xl group-hover:lg:text-white">Playschool</h3>
-                            <p class="text-gray-500 group-hover:lg:text-white"><small>Highschool Education</small></p>
+                            <i class="fa-solid fa-user-tie text-gray-500 text-4xl my-5 group-hover:text-white"></i>
+                            <h3 class="text-primary text-2xl group-hover:text-white">Junior High</h3>
+                            <p class="text-gray-500 group-hover:text-white"><small>Highschool Education</small></p>
                         </div>
                     </div>
                 </div>
@@ -127,10 +129,10 @@
         </div>
     </section>
 
-    <section class="whyUs py-32 lg:pt-52 lg:pb-24 text-center">
+    <section class="whyUs py-32 md:pt-64 lg:pt-52 lg:pb-24 text-center">
         <div class="container">
             <h2 class="text-3xl text-primary mb-10">Why Chooes Us?</h2>
-            <div class="lg:flex justify-center">
+            <div class="hidden lg:flex justify-center py-20">
                 <div class="answer relative text-center cursor-pointer  w-[250px] after:absolute after:h-[1px] after:w-[50%] after:bottom-2 after:content-[''] after:bg-gray-300 after:right-0 after:-z-10">
                     <h2 class="text-2xl text-primary">Holistic</h2>
                     <p class="text-gray-500">Education</p>
@@ -147,9 +149,133 @@
                     <span class="circle h-[20px] w-[20px] block bg-gray-500 mx-auto rounded-xl border-2  shadow-2xl"></span>
                 </div>
             </div>
+            <div class="whyUsContent">
+                <div class="xl:grid xl:grid-cols-2 lg:grid-cols-1">
+                    <iframe  class="mx-auto mb-10 w-full lg:w-[560px]"  height="315" src="https://www.youtube.com/embed/WvNaasp74cE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <div class="whyUsContentDesc text-justify xl:mr-20">
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, est explicabo? Officia saepe sunt repellendus nulla perspiciatis! Obcaecati amet alias, culpa aspernatur saepe fuga. Debitis ea laboriosam architecto quidem quas officia itaque hic voluptatem, deleniti expedita, perferendis aliquam, animi facere. Sunt non velit dolor mollitia molestiae excepturi optio eveniet est!
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente ullam, provident quis odio ipsa rem aspernatur minus? Placeat incidunt non quibusdam voluptatem veniam voluptates illo nihil earum et facilis itaque repellendus nemo, consectetur assumenda mollitia libero labore exercitationem corrupti ab rerum architecto laudantium unde? Aperiam eos iusto sunt dolor itaque.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
+    <section class="testimonials py-24 bg-gray bg-[#f2f2f2]">
+        <div class="container">
+            <div class="lg:grid lg:grid-cols-[_2fr,_1fr] items-center">
+                <div class="testimonialContent w-full relative">
+                    <img src="./img/qoute.svg" class="absolute -top-16 left-0" alt="">
+                    <p class="mb-10 lg:mr-20 text-justify">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio doloremque corporis perferendis facilis ad incidunt asperiores quae quis praesentium possimus et placeat repellendus veritatis, quaerat laboriosam, sequi sint cum quam!
+                    </p>
+                    <ul class="flex items-center">
+                        <li>
+                            <img class="w-[100px] h-[100px] mr-5" src="./img/testimony2.png" alt="">
+                        </li>
+                        <li>
+                            <div class="authorPhoto"></div>
+                            <div class="testimonialAuthor">
+                                <p><b>Joanna Mae Briones-Alcantara</b></p>
+                                <p>
+                                    Mother of Aebriel
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <img class="absolute bottom-0 right-0 lg:right-24" src="./img/qoute2.svg" alt="">
+                </div>
+               <div class="hidden lg:grid lg:grid-cols-2">
+                    <a class="mx-auto" href="#">
+                        <img class="w-[240px] h-[240px] object-cover" src="./img/fca-Studaent-receiving-certificate.webp" alt="">
+                    </a>
+                    <a class="mx-auto href="#">
+                        <img class="w-[240px] h-[240px] lg:mt-28 object-cover" src="./img/fca-Studaent-receiving-certificate-2.webp" alt="">
+                    </a>
+                    <a class="mx-auto href="#">
+                        <img class="w-[240px] h-[240px] lg:-mt-24 object-cover" src="./img/fca-Studaent-receiving-certificate-3.webp" alt="">
+                    </a>
+               </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="otherServices bg-primary py-28">
+        <div class="container">
+            <div class="gap-8 md:grid md:grid-cols-2 lg:grid-cols-3 lg:gap-5">
+                <h2 class="md:text-left text-center text-3xl text-white mb-12 lg:py-5">Other Services <br> that  we offer.</h2>
+                <div class="servicesItem">
+                    <fieldset class="border-2 text-white border-[#26a566] p-5 hover:border-white  h-[260px] cursor-pointer">
+                        <legend>
+                            <i class="fa-solid fa-book text-4xl p-4"></i>
+                        </legend>
+                        <div>
+                            <h3 class="text-lg uppercase mb-5">Tutorial Services</h3>
+                            <p>
+                                Tutorial services are available all-year round. Parents may inquire at the admin office to avail of this extra service for their kids.
+                            </p>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="servicesItem">
+                    <fieldset class="border-2 text-white border-[#26a566] p-5 hover:border-white h-[260px] cursor-pointer">
+                        <legend>
+                            <i class="fa-solid fa-pen-ruler text-4xl p-4"></i>
+                        </legend>
+                        <div>
+                            <h3 class="text-lg uppercase mb-5">Arts</h3>
+                            <p>
+                                Art classes at FCA are hands-on, where students learn sketching, painting with acrylics on canvas, and using other mediums of art.
+                            </p>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="servicesItem">
+                    <fieldset class="border-2 text-white border-[#26a566] p-5 hover:border-white h-[260px] cursor-pointer">
+                        <legend>
+                            <i class="fa-solid fa-music text-4xl p-4"></i>
+                        </legend>
+                        <div>
+                            <h3 class="text-lg uppercase mb-5">Music Lesson</h3>
+                            <p>
+                                Music class at FCA is practical and hands-on. Currently, classes offered are basic guitar, keyboard, and drums.
+                            </p>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="servicesItem">
+                    <fieldset class="border-2 text-white border-[#26a566] p-5 hover:border-white h-[260px] cursor-pointer">
+                        <legend>
+                            <i class="fa-solid fa-volleyball text-4xl p-4"></i>
+                        </legend>
+                        <div>
+                            <h3 class="text-lg uppercase mb-5">Sports</h3>
+                            <p>
+                                Tutorial services are available all-year round. Parents may inquire at the admin office to avail of this extra service.
+                            </p>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="servicesItem">
+                    <fieldset class="border-2 text-white border-[#26a566] p-5 hover:border-white h-[260px] cursor-pointer">
+                        <legend>
+                            <i class="fa-solid fa-bus text-4xl p-4"></i>
+                        </legend>
+                        <div>
+                            <h3 class="text-lg uppercase mb-5">Transportation</h3>
+                            <p>
+                                We offer transportation services for students. We have two (2) buses. You can sign up for the school service by filling out a form at the front office.                            
+                            </p>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <section class="scholarship py-40 bg-[url('./img/scholarship.png')] bg-cover bg-center bg-fixed z-1">
         <div class="container">
@@ -217,13 +343,20 @@
                 <div class="text-center lg:flex lg:justify-between lg:items-center">
                     <ul class="flex justify-center order-2">
                         <li class="mx-3"><small>Follow us:</small></li>
-                        <li class="mx-3"><i class="fa-brands fa-facebook text-3xl"></i></li>
-                        <li class="mx-3"><i class="fa-brands fa-instagram text-3xl"></i></li>
+                        <li class="mx-3"><i class="fa-brands fa-facebook text-3xl text-gray-500"></i></li>
+                        <li class="mx-3"><i class="fa-brands fa-instagram text-3xl text-gray-500"></i></li>
                     </ul>
                     <p class="order-1"><small>&#169; Frontline Christain Academy 2023</small></p>
                 </div>
             </div>
         </div>
     </footer>
+    <script>
+        const toggle_menu= document.querySelector(".toggle_menu");
+        const nav= document.querySelector("nav");
+        toggle_menu.addEventListener("click", ()=>{
+            nav.classList.toggle('active');
+        })
+    </script>
 </body>
 </html>
