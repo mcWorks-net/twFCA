@@ -627,6 +627,28 @@ nav ul li {
   -webkit-text-stroke-color: unset;
 }
 
+.toggle_menu.active span {
+  border-radius: 0.375rem;
+  border-style: none;
+}
+
+.toggle_menu.active {
+  transition: 0.5s ease;
+  transform: rotate(180deg);
+}
+
+.toggle_menu.active span:first-child{
+  transform: translate(-0.1rem, 0.1rem) rotate(-38deg);
+  transition: 0.5s ease;
+  width: 1.5rem;
+}
+
+.toggle_menu.active span:last-child{
+  transform: translate(-0.1rem, -0.1rem) rotate(38deg);
+  transition: 0.5s ease;
+  width: 1.5rem;
+}
+
 .fixed {
   position: fixed;
 }
@@ -665,6 +687,14 @@ nav ul li {
 
 .right-0 {
   right: 0px;
+}
+
+.-right-\[100\%\] {
+  right: -100%;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .z-10 {

@@ -45,4 +45,21 @@
         -webkit-text-stroke-width: unset;
         -webkit-text-stroke-color: unset;
     }
+    .toggle_menu.active span {
+        @apply rounded-md border-none
+    }
+    .toggle_menu.active {
+        transition: 0.5s ease;
+        transform: rotate(180deg);
+    }
+    .toggle_menu.active span:first-child{
+        transform: translate(-0.1rem, 0.1rem) rotate(-38deg);
+        transition: 0.5s ease;
+        width: 1.5rem;
+    }
+    .toggle_menu.active span:last-child{
+        transform: translate(-0.1rem, -0.1rem) rotate(38deg);
+        transition: 0.5s ease;
+        width: 1.5rem;
+    }
 }
