@@ -19,9 +19,7 @@
 }
 
 @layer components {
-    .btn {
-        @apply block py-2 px-6 rounded-md;
-    }
+
     nav.active {
         @apply right-0
     }
@@ -34,6 +32,12 @@
     }
     nav ul li.active {
         @apply lg:after:bg-accentYellow lg:after:h-2 lg:after:w-full lg:after:content-[''] lg:after:absolute lg:after:-top-6  lg:after:rounded-md
+    }
+    nav ul li a{
+        @apply lg:p-2
+    }
+    nav ul li:last-child a{
+        @apply bg-accentYellow w-[113px] text-center mx-auto text-white rounded-md p-2
     }
     .servicesItem i{
         -webkit-text-fill-color: #008542;
@@ -62,4 +66,30 @@
         transition: 0.5s ease;
         width: 1.5rem;
     }
+ 
+}
+
+@layer utilities {
+    .btn {
+        @apply block py-2 px-6 rounded-md;
+    }  
+}
+.answer.active span {
+    @apply bg-accentYellow
+}
+
+.tns-nav button.tns-nav-active{
+    @apply bg-accentYellow
+}
+.tns-nav button{
+    background-color: gray;
+    height: 1rem;
+    width: 1rem;
+    @apply rounded-xl mx-1 mt-32
+}
+.whyUsContent {
+    display: none;
+}
+.whyUsContent.active {
+    display: block !important;
 }
