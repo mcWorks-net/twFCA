@@ -94,7 +94,6 @@
 .whyUsContent.active {
     display: block !important;
 }
-
 .theContent {
     display: none;
     @apply leading-9;
