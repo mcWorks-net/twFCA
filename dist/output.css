@@ -775,6 +775,10 @@ nav ul li:last-child a {
   margin-bottom: 1.25rem;
 }
 
+.mb-11 {
+  margin-bottom: 2.75rem;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -797,10 +801,6 @@ nav ul li:last-child a {
 
 .mb-12 {
   margin-bottom: 3rem;
-}
-
-.mb-11 {
-  margin-bottom: 2.75rem;
 }
 
 .block {
@@ -1455,6 +1455,14 @@ nav ul li:last-child a {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-\[_2fr\2c 1_fr\] {
+    grid-template-columns: 2fr 1 fr;
+  }
+
+  .md\:grid-cols-\[_2fr\2c _1fr\] {
+    grid-template-columns: 2fr 1fr;
+  }
+
   .md\:text-left {
     text-align: left;
   }
@@ -1541,6 +1549,10 @@ nav ul li:last-child a {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .lg\:grid-cols-\[_2fr\2c 1_fr\] {
+    grid-template-columns: 2fr 1 fr;
+  }
+
   .lg\:items-center {
     align-items: center;
   }
@@ -1553,12 +1565,12 @@ nav ul li:last-child a {
     justify-content: space-between;
   }
 
-  .lg\:gap-5 {
-    gap: 1.25rem;
-  }
-
   .lg\:gap-8 {
     gap: 2rem;
+  }
+
+  .lg\:gap-5 {
+    gap: 1.25rem;
   }
 
   .lg\:py-8 {
