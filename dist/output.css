@@ -678,6 +678,14 @@ nav ul li:last-child a {
   right: -100%;
 }
 
+.right-5 {
+  right: 1.25rem;
+}
+
+.top-5 {
+  top: 1.25rem;
+}
+
 .top-0 {
   top: 0px;
 }
@@ -800,6 +808,10 @@ nav ul li:last-child a {
   margin-right: 1rem;
 }
 
+.mr-5 {
+  margin-right: 1.25rem;
+}
+
 .mb-20 {
   margin-bottom: 5rem;
 }
@@ -810,10 +822,6 @@ nav ul li:last-child a {
 
 .mt-16 {
   margin-top: 4rem;
-}
-
-.mr-5 {
-  margin-right: 1.25rem;
 }
 
 .mb-12 {
@@ -1176,6 +1184,16 @@ nav ul li:last-child a {
   padding-right: 2.5rem;
 }
 
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 .py-28 {
   padding-top: 7rem;
   padding-bottom: 7rem;
@@ -1279,6 +1297,11 @@ nav ul li:last-child a {
 .text-7xl {
   font-size: 4.5rem;
   line-height: 1;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-4xl {
@@ -1455,6 +1478,27 @@ nav ul li:last-child a {
 
 .modalInquire.active {
   display: block;
+}
+
+.accordionItem i {
+  transition: 0.5s ease;
+}
+
+.accordionItem.active i {
+  transform: rotate(90deg);
+  transition: 0.5s ease;
+}
+
+.accordionItem ul {
+  transition: 0.5s ease;
+  padding: 2rem;
+  max-height: 50%;
+  overflow: hidden;
+}
+
+.accordionItem.active ul {
+  transition: 0.5s ease;
+  padding: 2rem;
 }
 
 .after\:absolute::after {
