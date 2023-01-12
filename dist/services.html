@@ -74,7 +74,7 @@
 
     <section class="services py-20">
         <div class="container">
-            <h2 class="text-center text-huge font-extralight mb-24">Other Serices</h2>
+            <h2 class="text-center text-huge font-extralight mb-24">Other Services</h2>
             <h3 class="text-2xl mb-10">Regular Instructional Services:</h3>
             <div class="gap-5 lg:grid lg:grid-cols-[_2fr,_1fr] lg:gag-5">
                 <div class="leading-9 text-justify">
@@ -101,7 +101,7 @@
                         <p class="mb-7">
                             Tutorial services are available all-year round. Parents may inquire at the admin office to avail of this extra service for their child. FCA does its best to match up students needing extra help with tutors who are passionate to help them learn and keep up with class activities.
                         </p>
-                        <a class="btn bg-accent text-white w-[120px] text-center  mx-auto lg:mx-0" href="#">Inquire</a>
+                        <a class="btn btnInquire bg-accent text-white w-[120px] text-center  mx-auto lg:mx-0" data-inquire='Tutorial Services' href="#">Inquire</a>
                     </div>
                 </div>
             </div>
@@ -116,13 +116,13 @@
                         <p class="mb-7">
                             Art classes at FCA are hands-on, where students learn sketching, painting with acrylics on canvas, and using other mediums of art.
                         </p>
-                        <a class="btn bg-accent text-white w-[120px] text-center  mx-auto lg:mx-0" href="#">Inquire</a>
+                        <a class="btn btnInquire bg-accent text-white w-[120px] text-center  mx-auto lg:mx-0" data-inquire='Arts' href="#">Inquire</a>
                     </div>
                 </div>
             </div>
             <div class="servicesCard p-5 bg-clrGray my-10">
                 <div class="lg:flex items-center">
-                    <img class="max-w[298px] mx-auto mb-10 lg:mb-0" src="https://demo.frontlinebusiness.com.ph/dev/fca2023/wp-content/uploads/2022/11/Rectangle-55.png" alt="">
+                    <img class="max-w[298px] mx-auto mb-10 lg:mb-0 lg:mx-0" src="https://demo.frontlinebusiness.com.ph/dev/fca2023/wp-content/uploads/2022/11/Rectangle-57.png" alt="">
                     <div class="servicesItemDesc lg:mx-20 text-center lg:text-left">
                         <ul class="flex items-center mb-7 justify-center lg:justify-start">
                             <li class=""><i class="fa-solid fa-music text-accent text-3xl mr-5"></i></li>
@@ -131,12 +131,77 @@
                         <p class="mb-7">
                             Music class at FCA is practical and hands-on. Currently, classes offered are basic guitar, keyboard, and drums.
                         </p>
-                        <a class="btn bg-accent text-white w-[120px] text-center  mx-auto lg:mx-0" href="#">Inquire</a>
+                        <a class="btn btnInquire bg-accent text-white w-[120px] text-center  mx-auto lg:mx-0" data-inquire='Music Lessons' href="#">Inquire</a>
+                    </div>
+                </div>
+            </div>
+            <div class="servicesCard p-5 bg-clrGray my-10">
+                <div class="lg:flex items-center">
+                    <img class="max-w[298px] mx-auto mb-10 lg:mb-0" src="https://demo.frontlinebusiness.com.ph/dev/fca2023/wp-content/uploads/2022/11/Rectangle-59-1.png" alt="">
+                    <div class="servicesItemDesc lg:mx-20 text-center lg:text-left">
+                        <ul class="flex items-center mb-7 justify-center lg:justify-start">
+                            <li class=""><i class="fa-solid fa-volleyball text-accent text-3xl mr-5"></i></li>
+                            <li class="text-3xl font-bold text-accent">Sports</li>
+                        </ul>
+                        <p class="mb-7 w-full">
+                            Physical Education class helps keep students physically fit and active. We incorporate a variety of sports and activities such as kickboxing, mixed martial arts, and fun activities such as hiking and camping.
+                        </p>
+                        <a class="btn btnInquire bg-accent text-white w-[120px] text-center  mx-auto lg:mx-0" data-inquire='Sports' href="#">Inquire</a>
+                    </div>
+                </div>
+            </div>
+            <div class="servicesCard p-5 bg-clrGray my-10">
+                <div class="lg:flex items-center">
+                    <img class="max-w[298px] mx-auto mb-10 lg:mb-0" src="https://demo.frontlinebusiness.com.ph/dev/fca2023/wp-content/uploads/2022/11/Rectangle-61.png" alt="">
+                    <div class="servicesItemDesc lg:mx-20 text-center lg:text-left">
+                        <ul class="flex items-center mb-7 justify-center lg:justify-start">
+                            <li class=""><i class="fa-solid fa-bus text-accent text-3xl mr-5"></i></li>
+                            <li class="text-3xl font-bold text-accent">Transportation</li>
+                        </ul>
+                        <p class="mb-7 w-full">
+                            We offer transportation services for students. We have two (2) buses. You can sign up for the school service by filling out a form at the front office. Monthly bus service costs are based on the distance of the student’s pickup and drop-off location from the school.
+                        </p>
+                        <a class="btn btnInquire bg-accent text-white w-[120px] text-center  mx-auto lg:mx-0" data-inquire='Transportation' href="#">Inquire</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="volunteer text-center pb-24">
+        <div class="container">
+            <h2 class="text-3xl text-primary mb-10">Volunteer Service Opportunity</h2>
+            <p class="mb-10 lg:w-[500px] mx-auto">
+                opportunity for teacher volunteers to spend a year (12-month period) in the Philippines, serving at the school and in various ministry activities of Philippine Frontline Ministries.
+            </p>
+            <a class="btn bg-accentYellow text-white text-center w-[150px] mx-auto" href="#">See more</a>
+        </div>
+    </section>
+
+    <div class="hidden modalInquire fixed z-10 w-full h-full pt-[5%] left-0 right-0 top-0 bg-gray-800/[0.3] overflow-auto">
+        <div class="theModal relative bg-white lg:m-auto mt-[20%] md:mt-[10%] mx-auto py-6 px-5 border border-gray-400 w-[80%] lg:w-[30%] h-auto">
+            <div id="modalCLose" class="absolute top-2 right-4 p-1 text-xl font-extrabold cursor-pointer text-gray-500 hover:text-black">X</div>
+            <h2 id="inqureTitle" class="text-xl mb-5">Inquire for</h2>
+            <form action="">
+                <div class="inputGroup mb-3">
+                  <input class="w-full h-[40px] p-3 border rounded-md border-gray-400 focus:outline-none" type="text" name="" id="" placeholder="Grade Level">
+                </div>
+                <div class="inputGroup mb-3">
+                    <input class="w-full h-[40px] p-3 border rounded-md border-gray-400 focus:outline-none" type="text" name="" id="" placeholder="Full Name">
+                </div>
+                <div class="inputGroup mb-3">
+                    <input class="w-full h-[40px] p-3 border rounded-md border-gray-400 focus:outline-none" type="email" name="" id="" placeholder="Email">
+                </div>
+                <div class="inputGroup mb-3">
+                    <input class="w-full h-[40px] p-3 border rounded-md border-gray-400 focus:outline-none" type="text" name="" id="" placeholder="Mobile Number">
+                </div>
+                <div class="inputGroup">
+                    <textarea class="w-full p-3 border rounded-md border-gray-400 h-32 lg:h-auto focus:outline-none" name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                </div>
+                <a href="#" class="block w-full bg-accent text-white p-2 text-center rounded-md hover:bg-accentYellow">Send</a>
+            </form>
+        </div>
+    </div>
 
     <footer class="footer pt-10 pb-10 bg-clrGray">
         <div class="container">
@@ -197,6 +262,41 @@
          });
  
      </script>
+
+    <script>
+        const btnInquire = document.querySelectorAll(".btnInquire");
+        const displayModal = document.querySelector(".modalInquire");
+        const modalCLose = document.querySelector("#modalCLose");
+        const hiddenInput = document.getElementById("hiddenInput");
+
+        const inquireTitle = document.getElementById('inqureTitle');
+
+        btnInquire.forEach((btn)=> {
+        btn.addEventListener('click', (e)=> {
+            e.preventDefault();
+            displayModal.classList.add('active');
+
+            inquireTitle.innerText = "Inquire for " + btn.getAttribute('data-inquire');
+            hiddenInput.value = btn.getAttribute('data-inquire');
+
+        })
+        })
+
+        modalCLose.addEventListener('click', (e) => {
+        e.preventDefault();
+        displayModal.classList.remove('active');
+        })
+
+        window.addEventListener('click', (e)=> {
+        console.log(e.target)
+        if(e.target.classList.contains('modalInquire')) {
+            displayModal.classList.remove('active');
+        }
+        })
+
+
+        
+    </script>
  
  </body>
  </html>
