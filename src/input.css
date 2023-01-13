@@ -106,27 +106,43 @@
     text-decoration: underline;
 }
 
+.contentMenu li.active {
+    color:#008542;
+    text-decoration: underline;
+}
+
 .modalInquire.active {
     @apply block
 }
 
 .accordionItem i {
     transition: 0.5s ease;
+    transform: rotate(90deg);
 }
+
 
 .accordionItem.active i {
-    transform: rotate(90deg);
+    transform: rotate(-90deg);
     transition: 0.5s ease;
 }
 
-.accordionItem ul {
+.accordionItem ul li {
     transition: 0.5s ease;
-    padding: 2rem;
-    max-height: 50%;
+    padding: 0;
+    max-height: 0;
     overflow: hidden;
 }
 
-.accordionItem.active ul {
-    transition: 0.5s ease;
+.accordionItem h3:hover {
+    @apply bg-gray-200
+}
+
+.accordionItem h3 {
+    @apply w-[90%] cursor-pointer
+}
+
+.accordionItem.active ul li {
+    transition: 1s ease;
     padding: 2rem;
+    max-height: 100rem;
 }
