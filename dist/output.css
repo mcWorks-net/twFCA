@@ -772,21 +772,6 @@ nav ul li:last-child a {
   margin-bottom: 2.5rem;
 }
 
-.my-24 {
-  margin-top: 6rem;
-  margin-bottom: 6rem;
-}
-
-.mx-10 {
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
-}
-
-.mx-20 {
-  margin-left: 5rem;
-  margin-right: 5rem;
-}
-
 .mb-24 {
   margin-bottom: 6rem;
 }
@@ -821,10 +806,6 @@ nav ul li:last-child a {
 
 .mb-12 {
   margin-bottom: 3rem;
-}
-
-.ml-10 {
-  margin-left: 2.5rem;
 }
 
 .mb-7 {
@@ -901,10 +882,6 @@ nav ul li:last-child a {
 
 .h-\[52px\] {
   height: 52px;
-}
-
-.h-\[50px\] {
-  height: 50px;
 }
 
 .w-full {
@@ -1104,14 +1081,6 @@ nav ul li:last-child a {
 
 .p-4 {
   padding: 1rem;
-}
-
-.p-3 {
-  padding: 0.75rem;
-}
-
-.p-2 {
-  padding: 0.5rem;
 }
 
 .py-2 {
@@ -1484,15 +1453,6 @@ nav ul li:last-child a {
     right: 0px;
   }
 
-  .md\:mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .md\:mb-10 {
-    margin-bottom: 2.5rem;
-  }
-
   .md\:block {
     display: block;
   }
@@ -1519,10 +1479,6 @@ nav ul li:last-child a {
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .md\:grid-cols-\[_2fr\2c _1fr\] {
-    grid-template-columns: 2fr 1fr;
   }
 
   .md\:text-left {
@@ -1567,10 +1523,6 @@ nav ul li:last-child a {
 
   .lg\:-mt-24 {
     margin-top: -6rem;
-  }
-
-  .lg\:mb-10 {
-    margin-bottom: 2.5rem;
   }
 
   .lg\:block {
@@ -1625,10 +1577,6 @@ nav ul li:last-child a {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .lg\:grid-cols-\[_1fr\2c _2fr\] {
-    grid-template-columns: 1fr 2fr;
-  }
-
   .lg\:items-center {
     align-items: center;
   }
@@ -1651,10 +1599,6 @@ nav ul li:last-child a {
 
   .lg\:gap-5 {
     gap: 1.25rem;
-  }
-
-  .lg\:gap-3 {
-    gap: 0.75rem;
   }
 
   .lg\:py-8 {
