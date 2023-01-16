@@ -3,105 +3,103 @@
 @tailwind utilities;
 
 @layer base {
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-bold leading-relaxed;
+  }
 
-    h1, h2, h3, h4 {
-        @apply font-bold leading-relaxed;
-    }
+  p {
+    @apply mb-2;
+  }
 
-    p {
-        @apply mb-2;
-    }
-
-    body {
-        @apply leading-relaxed font-raleway;
-    }
-
+  body {
+    @apply leading-relaxed font-raleway;
+  }
 }
 
 @layer components {
-
-    nav.active {
-        @apply right-0
-    }
-    nav a{
-        @apply block text-center text-gray-600 
-    }
-    nav ul li {
-        @apply lg:border-l-2 border-gray-300 my-5 lg:first:border-l-0 w-full
-        relative
-    }
-    nav ul li.active {
-        @apply lg:after:bg-accentYellow lg:after:h-2 lg:after:w-full lg:after:content-[''] lg:after:absolute lg:after:-top-6  lg:after:rounded-md
-    }
-    nav ul li a{
-        @apply lg:p-2
-    }
-    nav ul li:last-child a{
-        @apply bg-accentYellow w-[113px] text-center mx-auto text-white rounded-md p-2
-    }
-    .servicesItem i{
-        -webkit-text-fill-color: #008542;
-        -webkit-text-stroke-width: 0.7px;
-        -webkit-text-stroke-color: white;
-    }   
-    .servicesItem:hover i{
-        -webkit-text-fill-color: unset;
-        -webkit-text-stroke-width: unset;
-        -webkit-text-stroke-color: unset;
-    }
-    .toggle_menu.active span {
-        @apply rounded-md border-none
-    }
-    .toggle_menu.active {
-        transition: 0.5s ease;
-        transform: rotate(180deg);
-    }
-    .toggle_menu.active span:first-child{
-        transform: translate(-0.1rem, 0.1rem) rotate(-38deg);
-        transition: 0.5s ease;
-        width: 1.5rem;
-    }
-    .toggle_menu.active span:last-child{
-        transform: translate(-0.1rem, -0.1rem) rotate(38deg);
-        transition: 0.5s ease;
-        width: 1.5rem;
-    }
- 
+  nav.active {
+    @apply right-0;
+  }
+  nav a {
+    @apply block text-center text-gray-600;
+  }
+  nav ul li {
+    @apply lg:border-l-2 border-gray-300 my-5 lg:first:border-l-0 w-full
+        relative;
+  }
+  nav ul li.active {
+    @apply lg:after:bg-accentYellow lg:after:h-2 lg:after:w-full lg:after:content-[''] lg:after:absolute lg:after:-top-6  lg:after:rounded-md;
+  }
+  nav ul li a {
+    @apply lg:p-2;
+  }
+  nav ul li:last-child a {
+    @apply bg-accentYellow w-[113px] text-center mx-auto text-white rounded-md p-2;
+  }
+  .servicesItem i {
+    -webkit-text-fill-color: #008542;
+    -webkit-text-stroke-width: 0.7px;
+    -webkit-text-stroke-color: white;
+  }
+  .servicesItem:hover i {
+    -webkit-text-fill-color: unset;
+    -webkit-text-stroke-width: unset;
+    -webkit-text-stroke-color: unset;
+  }
+  .toggle_menu.active span {
+    @apply rounded-md border-none;
+  }
+  .toggle_menu.active {
+    transition: 0.5s ease;
+    transform: rotate(180deg);
+  }
+  .toggle_menu.active span:first-child {
+    transform: translate(-0.1rem, 0.1rem) rotate(-38deg);
+    transition: 0.5s ease;
+    width: 1.5rem;
+  }
+  .toggle_menu.active span:last-child {
+    transform: translate(-0.1rem, -0.1rem) rotate(38deg);
+    transition: 0.5s ease;
+    width: 1.5rem;
+  }
 }
 
 @layer utilities {
-    .btn {
-        @apply block py-2 px-6 rounded-md;
-    }  
-
+  .btn {
+    @apply block py-2 px-6 rounded-md;
+  }
 }
 .answer.active span {
-    @apply bg-accentYellow
+  @apply bg-accentYellow;
 }
 
-.tns-nav button.tns-nav-active{
-    @apply bg-accentYellow
+.tns-nav button.tns-nav-active {
+  @apply bg-accentYellow;
 }
-.tns-nav button{
-    background-color: gray;
-    height: 1rem;
-    width: 1rem;
-    @apply rounded-xl mx-1 mt-32
+.tns-nav button {
+  background-color: gray;
+  height: 1rem;
+  width: 1rem;
+  @apply rounded-xl mx-1 mt-32;
 }
 .whyUsContent {
-    display: none;
+  display: none;
 }
 .whyUsContent.active {
-    display: block !important;
+  display: block !important;
 }
 .theContent {
-    display: none;
-    @apply leading-9;
+  display: none;
+  @apply leading-9;
 }
 .theContent.active {
-    display: block;
+  display: block;
 }
 .about .contentMenu li.active {
-    color:#008542;
-    text-decoration: underline;
+  color: #008542;
+  text-decoration: underline;
 }
