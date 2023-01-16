@@ -15,6 +15,9 @@
     body {
         @apply leading-relaxed font-raleway;
     }
+    .narrowContent {
+        @apply px-10
+    }
 
 }
 
@@ -133,9 +136,7 @@
     overflow: hidden;
 }
 
-.accordionItem h3:hover {
-    @apply bg-gray-200
-}
+
 
 .accordionItem h3 {
     @apply w-[90%] cursor-pointer

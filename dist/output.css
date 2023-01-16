@@ -433,6 +433,11 @@ body {
   line-height: 1.625;
 }
 
+.narrowContent {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -812,6 +817,11 @@ nav ul li:last-child a {
   margin-bottom: 2.5rem;
 }
 
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
 .mb-24 {
   margin-bottom: 6rem;
 }
@@ -886,6 +896,14 @@ nav ul li:last-child a {
 
 .mb-3 {
   margin-bottom: 0.75rem;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
+.ml-16 {
+  margin-left: 4rem;
 }
 
 .block {
@@ -1022,6 +1040,10 @@ nav ul li:last-child a {
 
 .w-\[80\%\] {
   width: 80%;
+}
+
+.w-\[375px\] {
+  width: 375px;
 }
 
 .w-0 {
@@ -1430,6 +1452,11 @@ nav ul li:last-child a {
   line-height: 1.75rem;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .font-extralight {
   font-weight: 200;
 }
@@ -1444,6 +1471,10 @@ nav ul li:last-child a {
 
 .font-extrabold {
   font-weight: 800;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .uppercase {
@@ -1620,11 +1651,6 @@ nav ul li:last-child a {
   padding: 0;
   max-height: 0;
   overflow: hidden;
-}
-
-.accordionItem h3:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
 .accordionItem h3 {
@@ -1835,6 +1861,11 @@ nav ul li:last-child a {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1886,6 +1917,16 @@ nav ul li:last-child a {
   .lg\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
+  }
+
+  .lg\:mx-36 {
+    margin-left: 9rem;
+    margin-right: 9rem;
+  }
+
+  .lg\:mx-40 {
+    margin-left: 10rem;
+    margin-right: 10rem;
   }
 
   .lg\:mb-0 {

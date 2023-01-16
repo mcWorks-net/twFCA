@@ -29,6 +29,7 @@ module.exports = {
       center: true,
       padding: "15px",
     }
+
   },
   plugins: [
     plugin(function({ addVariant }) {
