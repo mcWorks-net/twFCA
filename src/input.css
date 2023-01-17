@@ -113,20 +113,33 @@
 .accordionItem ul {
   max-height: 0;
   overflow: hidden;
-  transition: 0.5s ease-in;
+  transition: 0.3s ease-out;
   margin-left: 2rem;
 }
 
+.accordionItem ul li {
+ margin-bottom: 10px;
+}
+
 .accordionItem.active ul {
-  max-height: 40rem;
-  transition: 0.5s ease-in;
+  max-height: 50rem;
+  transition: 0.3s ease-in;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .accordionItem i {
   transform: rotate(90deg);
-  transition: 0.5s ease;
+  transition: 0.3s ease;
 }
 .accordionItem.active i {
   transform: rotate(-90deg);
-  transition: 0.5s ease;
+  transition: 0.3s ease;
+}
+.contentMenu li.active{
+  text-decoration: underline;
+}
+
+.modalInquire.active {
+  display: block;
 }
